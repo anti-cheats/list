@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'content.yml'
+      - 'template.html'
   workflow_dispatch:
 
 jobs:
