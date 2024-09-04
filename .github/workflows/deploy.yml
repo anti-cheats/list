@@ -24,6 +24,7 @@ jobs:
 
       - name: Generate webpage from YAML
         run: |
+          mkdir ./output
           python -c "
           import yaml
           from jinja2 import Template
