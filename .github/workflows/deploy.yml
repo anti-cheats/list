@@ -23,7 +23,6 @@ jobs:
           pip install jinja2 pyyaml
 
       - name: Generate webpage from YAML
-        if: steps.content_yaml.outputs.exists == 'true'
         run: |
           python -c "
           import yaml
@@ -35,7 +34,7 @@ jobs:
           with open('template.html') as f:
               template = Template(f.read())
 
-          with open('index.html', 'w') as f:
+          with open('output/index.html', 'w') as f:  # Generate index.html inside the output directory
               f.write(template.render(**data))
           "
 
@@ -43,4 +42,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./index.html
+          publish_dir: ./output  # Point to the directory containing index.html
