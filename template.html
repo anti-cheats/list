@@ -88,14 +88,14 @@
                 <tr>
                     <th class="sticky-col">Game</th>
                     {% for anticheat in anticheats %}
-                    <th>{{ anticheat }}</th>
+                    <th class="sticky-col">{{ anticheat }}</th>
                     {% endfor %}
                 </tr>
             </thead>
             <tbody>
                 {% for game in games %}
                 <tr>
-                    <td class="sticky-col">{{ game }}</td>
+                    <td>{{ game }}</td>
                     {% for anticheat in anticheats %}
                     <td>{% if anticheat in games[game] %}<span class="tick">✔</span>{% else %}<span class="cross">✘</span>{% endif %}</td>
                     {% endfor %}
