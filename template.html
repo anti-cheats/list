@@ -3,15 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{title}}</title>
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        th {
+            position: sticky;
+            top: 0;
+            background-color: #f4f4f4;
+        }
+        .tick {
+            color: green;
+            font-weight: bold;
+        }
+        .cross {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <h1>{{title}}</h1>
-    <p>{{description}}</p>
-    <ul>
-        {% for item in items %}
-        <li>{{item}}</li>
-        {% endfor %}
-    </ul>
+    <h1>{{ title }}</h1>
+    <p>{{ description }}</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Anti-Cheat</th>
+                {% for game in games %}
+                <th>{{ game }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for anticheat in anticheats %}
+            <tr>
+                <td>{{ anticheat }}</td>
+                {% for game in games %}
+                <td>{% if anticheat in games[game] %}<span class="tick">✔</span>{% else %}<span class="cross">✘</span>{% endif %}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 </body>
 </html>

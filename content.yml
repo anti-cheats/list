@@ -1,6 +1,223 @@
-title: "My Generated Webpage"
-description: "This page is generated using GitHub Actions."
-items:
-  - "First item"
-  - "Second item"
-  - "Third item"
+title: "Anti-Cheat Systems for Popular Online Games"
+description: "A comprehensive list of anti-cheat systems used by the 50 most popular online games."
+
+anticheats:
+  - "PunkBuster"
+  - "EasyAntiCheat"
+  - "BattleEye"
+  - "Vanguard"
+  - "VAC"
+
+games:
+  "Fortnite":
+      - "PunkBuster"
+      - "EasyAntiCheat"
+  "Call of Duty: Warzone":
+      - "EasyAntiCheat"
+      - "BattleEye"
+  "Apex Legends":
+      - "EasyAntiCheat"
+  "PUBG":
+      - "BattleEye"
+  "Valorant":
+      - "Vanguard"
+  "CS:GO":
+      - "VAC"
+  "Overwatch":
+      - "Warden"
+  "Rainbow Six Siege":
+      - "BattleEye"
+  "League of Legends":
+      - "Riot Vanguard"
+  "Dota 2":
+      - "VAC"
+  "Minecraft":
+      - "None"
+  "World of Warcraft":
+      - "Warden"
+  "FIFA":
+      - "FairFight"
+  "Rocket League":
+      - "EasyAntiCheat"
+  "Destiny 2":
+      - "BattleEye"
+  "Battlefield V":
+      - "FairFight"
+  "Grand Theft Auto V":
+      - "VAC"
+  "Rust":
+      - "EasyAntiCheat"
+  "Escape from Tarkov":
+      - "BattleEye"
+  "Fall Guys":
+      - "EasyAntiCheat"
+  "Among Us":
+      - "None"
+  "Roblox":
+      - "None"
+  "Counter-Strike 1.6":
+      - "VAC"
+  "Team Fortress 2":
+      - "VAC"
+  "The Division 2":
+      - "BattleEye"
+  "Hearthstone":
+      - "None"
+  "Gears 5":
+      - "EasyAntiCheat"
+  "Halo: The Master Chief Collection":
+      - "EasyAntiCheat"
+  "Smite":
+      - "EasyAntiCheat"
+  "World of Tanks":
+      - "None"
+  "World of Warships":
+      - "None"
+  "Warframe":
+      - "None"
+  "Paladins":
+      - "EasyAntiCheat"
+  "Star Wars Battlefront II":
+      - "EasyAntiCheat"
+  "Starcraft II":
+      - "None"
+  "Heroes of the Storm":
+      - "None"
+  "For Honor":
+      - "EasyAntiCheat"
+  "Hyper Scape":
+      - "EasyAntiCheat"
+  "Left 4 Dead 2":
+      - "VAC"
+  "Payday 2":
+      - "VAC"
+  "Planetside 2":
+      - "None"
+  "Quake Champions":
+      - "EasyAntiCheat"
+  "Realm Royale":
+      - "EasyAntiCheat"
+  "Rising Storm 2: Vietnam":
+      - "VAC"
+  "Sea of Thieves":
+      - "None"
+  "Tom Clancy's Ghost Recon":
+      - "EasyAntiCheat"
+  "Watch Dogs 2":
+      - "None"
+  "Wargame: Red Dragon":
+      - "None"
+  "DayZ":
+      - "BattleEye"
+  "Warface":
+      - "BattleEye"
+  "Dying Light":
+      - "EasyAntiCheat"
+  "PUBG Mobile":
+      - "BattleEye"
+  "Free Fire":
+      - "None"
+  "Call of Duty Mobile":
+      - "None"
+  "Arena of Valor":
+      - "None"
+  "Clash Royale":
+      - "None"
+  "Vainglory":
+      - "None"
+  "League of Legends: Wild Rift":
+      - "Riot Vanguard"
+  "Brawl Stars":
+      - "None"
+  "H1Z1":
+      - "BattleEye"
+  "Trove":
+      - "None"
+  "Crossout":
+      - "None"
+  "War Thunder":
+      - "None"
+  "Mordhau":
+      - "EasyAntiCheat"
+  "Squad":
+      - "BattleEye"
+  "Insurgency: Sandstorm":
+      - "EasyAntiCheat"
+  "Gang Beasts":
+      - "None"
+  "Totally Accurate Battlegrounds":
+      - "None"
+  "SpellForce 3":
+      - "None"
+  "Atlas":
+      - "EasyAntiCheat"
+  "World War 3":
+      - "EasyAntiCheat"
+  "PUBG Lite":
+      - "BattleEye"
+  "Fortnite Mobile":
+      - "PunkBuster"
+  "Realm Royale Mobile":
+      - "EasyAntiCheat"
+  "Fall Guys Mobile":
+      - "EasyAntiCheat"
+  "Gears Tactics":
+      - "EasyAntiCheat"
+  "Apex Legends Mobile":
+      - "EasyAntiCheat"
+  "Path of Exile":
+      - "None"
+  "Albion Online":
+      - "None"
+  "The Surge 2":
+      - "EasyAntiCheat"
+  "Metro Exodus":
+      - "EasyAntiCheat"
+  "Conan Exiles":
+      - "EasyAntiCheat"
+  "The Outer Worlds":
+      - "None"
+  "Seven Days to Die":
+      - "None"
+  "The Forest":
+      - "None"
+  "Dead by Daylight":
+      - "EasyAntiCheat"
+  "No Man's Sky":
+      - "None"
+  "Astroneer":
+      - "None"
+  "Subnautica":
+      - "None"
+  "Satisfactory":
+      - "None"
+  "F1 2020":
+      - "None"
+  "Assetto Corsa Competizione":
+      - "None"
+  "The Long Dark":
+      - "None"
+  "Oxygen Not Included":
+      - "None"
+  "Slay the Spire":
+      - "None"
+  "Hades":
+      - "None"
+  "Phasmophobia":
+      - "None"
+  "Deep Rock Galactic":
+      - "None"
+  "Stardew Valley":
+      - "None"
+  "Factorio":
+      - "None"
+  "RimWorld":
+      - "None"
+  "Cities: Skylines":
+      - "None"
+  "Prison Architect":
+      - "None"
+  "Kerbal Space Program":
+      - "None"
+  "Terraria":
+      - "None"
