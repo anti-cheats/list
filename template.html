@@ -32,6 +32,12 @@
             color: red;
             font-weight: bold;
         }
+        .sticky-col {
+            position: sticky;
+            left: 0;
+            background-color: #f4f4f4;
+            z-index: 2;
+        }
     </style>
 </head>
 <body>
@@ -40,17 +46,17 @@
     <table>
         <thead>
             <tr>
-                <th>Anti-Cheat</th>
-                {% for game in games %}
-                <th>{{ game }}</th>
+                <th class="sticky-col">Game</th>
+                {% for anticheat in anticheats %}
+                <th>{{ anticheat }}</th>
                 {% endfor %}
             </tr>
         </thead>
         <tbody>
-            {% for anticheat in anticheats %}
+            {% for game in games %}
             <tr>
-                <td>{{ anticheat }}</td>
-                {% for game in games %}
+                <td class="sticky-col">{{ game }}</td>
+                {% for anticheat in anticheats %}
                 <td>{% if anticheat in games[game] %}<span class="tick">✔</span>{% else %}<span class="cross">✘</span>{% endif %}</td>
                 {% endfor %}
             </tr>
