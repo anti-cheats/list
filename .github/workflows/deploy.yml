@@ -1,11 +1,3 @@
-name: Deploy
-
-on:
-  push:
-    paths:
-      - 'content.yml'
-  workflow_dispatch:
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -34,12 +26,24 @@ jobs:
           with open('template.html') as f:
               template = Template(f.read())
 
-          with open('index.html', 'w') as f:
+          with open('output/index.html', 'w') as f:
               f.write(template.render(**data))
           "
+
+      - name: Check output directory
+        run: ls -la ./output
+
+      - name: Git status before add
+        run: git status
+
+      - name: Add files
+        run: git add --force ./output/*
+
+      - name: Git status after add
+        run: git status
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./index.html
+          publish_dir: ./output
